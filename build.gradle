@@ -71,6 +71,9 @@ if(hasProperty("signing.keyId")) {
 }
 
 repositories {
+	flatDir{
+		dirs 'src/main/resources/'
+	}
 	mavenLocal()
 	mavenCentral()
 }
@@ -179,7 +182,8 @@ dependencies {
 	compile "com.fasterxml.jackson.core:jackson-core:2.5.4"
 
 	// UIMA Components
-	compile 'fr.univ-nantes.julestar:uima-tree-tagger-wrapper:1.0'
+	compile name:'uima-tree-tagger-wrapper-1.0'
+	compile name:'org.annolab.tt4j'
 	compile 'fr.univ-nantes.julestar:uima-tokenizer:1.0'
 	compile 'fr.univ-nantes.julestar:uima-filter:1.0'
 	compile 'fr.univ-nantes.julestar:uima-mapper:1.0'

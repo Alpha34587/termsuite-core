@@ -397,7 +397,7 @@ public class TermSuitePipeline {
 					TreeTaggerWrapper.PARAM_TAG_FEATURE, "tag",
 					TreeTaggerWrapper.PARAM_LEMMA_FEATURE, "lemma",
 					TreeTaggerWrapper.PARAM_UPDATE_ANNOTATION_FEATURES, true,
-					TreeTaggerWrapper.PARAM_TT_CMD_ARGUMENTS, new String[]{"-lemma","-token","-no-unknown","-quiet"},
+					TreeTaggerWrapper.PARAM_TT_CMD_ARGUMENTS, new String[]{"-lemma","-token","-no-unknown","-quiet","-sgml"},
 					TreeTaggerWrapper.PARAM_TT_HOME_DIRECTORY, this.treeTaggerPath.get()
 				);
 			
